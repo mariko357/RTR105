@@ -1,0 +1,33 @@
+  384  cd *
+  385  ls
+  386  nvim terminal.md
+  387  uname -a
+  388  man uname
+  389  nvim terminal.md
+  390  nvim readme.md
+  391  history
+  399  nvim readme.md
+  400  ls -la
+  401  sudo apt remove --purge zsh
+  402  sudo apt utoremove 
+  403  sudo apt autoremove 
+  404  vim readme.md
+  405  nvim readme.md
+  406  cd 
+  407  cd -
+  408  nvim readme.md
+  409  cd /
+  410  tree
+  411  cd -
+  412  nvim readme.md
+  413  ls -la
+  414  nvim readme.md
+  415  \n
+  416  echo hello world!
+  417  hexdump
+  418  hexdump readme.md
+  419  hexdump /
+  420  hexdump .
+  421  history
+  422  ls
+  423  history > history-2023-09-06.txt
