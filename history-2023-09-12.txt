@@ -1,0 +1,28 @@
+  248  nvim script
+  249  whereis nvim
+  250  clear
+  251  cat /bin/pwd
+  252  clear
+  253  echo $0
+  254  ls
+  255  clear
+  256  ls
+  257  rm script
+  258  cd /mnt/d/rtu/*
+  259  ls
+  260  nvim script
+  261  echo ======
+  262  echo "====="
+  263  nvim script
+  264  sudo chmod scrip +x
+  265  sudo chmod +x script
+  266  ./script
+  267  nvim script
+  268  ./script
+  269  nvim script
+  270  /.script
+  271  ./script
+  272  nvim script
+  273  ./script
+  274  nvim script
+  275  ./script

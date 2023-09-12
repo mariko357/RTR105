@@ -1,0 +1,25 @@
+#!/bin/zsh
+echo "\nwho am i:"
+whoami
+echo "\n++++++++++++++++++++++++++++++++++++\n"
+ls
+echo "\n++++++++++++++++++++++++++++++++++++\n"
+pwd
+echo "\nCreating file aaa"
+touch aaa
+echo "\nContents of the directory:"
+ls
+echo "\nAppending file with text"
+echo "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat." >> aaa
+echo "\nContents of the file now:"
+cat aaa
+echo "\nRenaming the file to bbb"
+mv aaa bbb
+echo "\nContents of the directory now:"
+ls
+echo "\nDeleting everything from the file"
+echo "" > bbb
+echo "\nContents of the file:"
+cat bbb
+echo "\nDeleting the file and exiting the script\n\n"
+rm bbb

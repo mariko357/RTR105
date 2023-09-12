@@ -53,3 +53,7 @@ __Bold__,
 - `mkdir` - create a new directory
 - `touch` - create an empty file
 - `echo` - echos text to the output device
+***
+
+# 12-09-2023
+We have created first script file and uploaded it here. We also used online console.
