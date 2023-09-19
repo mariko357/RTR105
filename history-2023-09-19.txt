@@ -1,0 +1,25 @@
+  440  ls
+  441  git push -u origin main
+  442  git --version
+  443  clear
+  444  nvim git-upload
+  445  git diif
+  446  git diff
+  447  git status
+  448  nvim git-upload
+  449  chmod +x git-upload
+  450  ./git-upload
+  451  ls
+  452  git status
+  453  git log
+  454  nvim git-upload
+  455  ls
+  456  git status
+  457  ls
+  458  nvim git-upload
+  459  ls
+  460  ./git-upload
+  461  clear
+  462  ls
+  463  nvim readme.md
+  464  touch history-2023-09-19.txt

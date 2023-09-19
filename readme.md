@@ -57,3 +57,10 @@ __Bold__,
 
 # 12-09-2023
 We have created first script file and uploaded it here. We also used online console.
+
+# 2023-09-19
+We have got acquainted with git. Created script to commit and upload changes automatically.  
+__Some commands we have used today:__  
+- `git --version`
+- `git commit`
+- `git push`
