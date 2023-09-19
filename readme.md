@@ -61,6 +61,8 @@ We have created first script file and uploaded it here. We also used online cons
 # 2023-09-19
 We have got acquainted with git. Created script to commit and upload changes automatically.  
 __Some commands we have used today:__  
-- `git --version`
-- `git commit`
-- `git push`
+- `git --version` - outputs version of git
+- `git status` - get status of your local repository
+- `git commit` - commits changes
+- `git push` - pushes commit to the repo
+- `git clone` - clones the repository
