@@ -1,0 +1,13 @@
+#!/bin/zsh
+echo "Invoking commit script\n"
+echo "Files to be commited:\n"
+git status
+sleep 5
+git add .
+echo "You will now be prompted for commit message, please enter it and quit the text editor.\n"
+sleep 5
+git commit
+echo "Pushing commit to the repo\n"
+git push -u origin main
+echo "Script finished, Goodbye!"
+
