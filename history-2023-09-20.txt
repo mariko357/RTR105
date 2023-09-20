@@ -1,0 +1,23 @@
+  516  ls
+  517  gcc lab3.c > preprocessor
+  518  ls
+  519  cat preprocessor
+  520  gcc -E lab3.c > preprocessor
+  521  cat preprocessor
+  522  gcc -s
+  523  gcc -s lab3.c
+  524  ls
+  525  ls -lt
+  526  cat a.out
+  527  hexdump a.out
+  528  gcc -S lab3.c
+  529  ls
+  530  cat lab3.s
+  531  ls
+  532  rm a.out lab3.s
+  533  ls
+  534  ls -kt
+  535  ls -lt
+  536  ls
+  537  cd rtu
+  538  ls
