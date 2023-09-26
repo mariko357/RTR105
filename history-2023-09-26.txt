@@ -1,0 +1,5 @@
+  578  nvim first-program.c
+  579  gcc first-program.c -o first-program
+  580  nvim first-program.c
+  581  gcc first-program.c -o first-program
+  582  ./first-program
