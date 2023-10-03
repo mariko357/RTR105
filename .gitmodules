@@ -1,0 +1,3 @@
+[submodule "tatusmatrix-repos"]
+	path = tatusmatrix-repos
+	url = https://github.com/tatusmatrix/RTR105_2023_V01.git
