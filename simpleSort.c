@@ -19,9 +19,9 @@ int main(){
     scanf("%hhu", &mode);
 
     for(unsigned char i = 0; i < 3; i++){
-        if(numbers[i].number < 61){
-            numbers[i].number -= 20;
-            numbers[i].shift = 20;
+        if(numbers[i].number >= 97){
+            numbers[i].number -= 32;
+            numbers[i].shift = 32;
         }
         else{
             numbers[i].shift = 0;
