@@ -1,0 +1,13 @@
+#!/usr/bin/gnuplot --persist
+
+set terminal pngcairo background rgb 'white' enhanced font "arial,10" fontscale 1.0 size 1920, 1080
+
+set title "1st and 2nd order derivative error (finite difference vs definition)"
+set xlabel "X"
+set ylabel "Error"
+
+set grid
+set output "errors.png"
+
+plot "derivative.dat" every ::1 using 1:7 with lines title "atan'(x) error",\
+     "derivative.dat" every ::1 using 1:8 with lines title "atan''(x) error"
