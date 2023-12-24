@@ -1,0 +1,15 @@
+#!/usr/bin/gnuplot --persist
+
+filenames = "1 2 3 4 5 6 7 8 9 10 100 1000 100000"
+set terminal pngcairo background rgb 'white' enhanced font "arial,10" fontscale 1.0 size 1920, 1080
+
+set title "Taylor expansion demonstration with different number of iterations"
+set xlabel "Input value"
+set ylabel "Output value"
+
+set grid
+
+set output "taylor.png"
+
+plot atan(x) title "atan(x) - calculated with gnuplot", \
+    for [file in filenames] file.".dat" using 1:2 with lines title "Iterations: ".file

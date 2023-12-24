@@ -1,0 +1,15 @@
+#!/usr/bin/gnuplot --persist
+
+filenames = "10 100 1000 10000 100000"
+file = ""
+set terminal pngcairo background rgb 'white' enhanced font "arial,10" fontscale 1.0 size 1920, 1080
+
+set title "Taylor expansion error"
+set xlabel "Input value (x)"
+set ylabel "Error"
+
+set grid
+
+set output "errors.png"
+
+plot for [file in filenames] file.".dat" using 1:4 with lines title "Number of iterations".file
