@@ -6,11 +6,15 @@ each derived from the function's derivatives at a specific point. Named after th
 this expansion is particularly useful for approximating complex functions with simpler polynomial expressions.
 
 ![](https://i.pinimg.com/originals/d8/ce/7d/d8ce7d45df6eacfdc1086ebc296aaf11.gif)
+
 *[Source](https://www.pinterest.com/pin/842736149007640110/)*
 
 ## My function to investigate:
 
-$\arctan (x) \simeq \frac{x}{\sqrt{1+x^2}} \cdot \sum_{k=0}^{500} \frac{(2 \cdot k) !}{(k !)^2 \cdot 4^k \cdot(2 \cdot k+1)} \cdot\left(\frac{x^2}{1+x^2}\right)^k, \text { on }-\infty<x<\infty$
+$$
+\arctan(x) \approx \frac{x}{\sqrt{1+x^2}} \sum_{k=0}^{n} \frac{(2k)!}{(k!)^2 \cdot 4^k \cdot (2k+1)} \left(\frac{x^2}{1+x^2}\right)^k, \quad -\infty < x < \infty
+$$
+
 
 ## Code breakdown:
 
@@ -71,3 +75,5 @@ The graph below demonstrates how the function of `atan(x)`, calculated using Tay
 The graph below demonstrates the error of function of `atan(x)`, calculated using Taylor series vs the function calculated with `math` library.
 
 ![](/taylor-expansion/errors/errors.png)
+
+Thus, it is obvious that increasing number of terms leads to error being smaller.
