@@ -38,11 +38,15 @@ can be used.
 
 Below are some verifications of the calculated values (calculated with [WolframAlpha](https://wolframalpha.com)):
 
+***
 ![](/integral/Screenshot_20231225_125506.png)
+
 ![](/integral/Screenshot_20231225_125559.png)
-
+***
 ![](/integral/Screenshot_20231225_125717.png)
-![](/integral/Screenshot_20231225_125709.png)
 
+![](/integral/Screenshot_20231225_125709.png)
+***
 ![](/integral/Screenshot_20231225_125841.png)
+
 ![](/integral/Screenshot_20231225_125853.png)
