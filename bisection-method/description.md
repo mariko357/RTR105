@@ -52,3 +52,11 @@ cd RTR105/bisection-method
 gcc -lm main.c
 ./a.out
 ```
+
+*** 
+
+[Wolfram alpha](https://www.wolframalpha.com/input?i=roots+of+atan%28x%29):
+![](/bisection-method/Screenshot_20231224_170628.png)
+
+My program:
+![](/bisection-method/Screenshot_20231224_170759.png)

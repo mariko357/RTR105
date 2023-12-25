@@ -1,0 +1,12 @@
+#!/usr/bin/gnuplot --persist
+
+set terminal pngcairo background rgb 'white' enhanced font "arial,10" fontscale 1.0 size 1920, 1080
+
+set title "Precision vs number of iterations"
+set xlabel "Precision"
+set ylabel "Number of iterations"
+set logscale x 10
+set grid
+set output "iterations.png"
+
+plot "precision.dat" using 1:2 with lines title "Number of iterations"

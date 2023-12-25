@@ -1,0 +1,25 @@
+#!/usr/bin/gnuplot --persist
+
+# Set terminal and output file
+set terminal pngcairo background rgb 'white' enhanced font "arial,10" fontscale 1.0 size 1920, 1080
+set output "statistics.png"
+
+# Set title and labels
+set title "Frequency of Character Use"
+set xlabel "Character"
+set ylabel "Times Used"
+
+# Set grid
+set grid
+
+# Set style for the histogram
+set style data histogram
+set style histogram clustered gap 1
+set style fill solid border -1
+
+# Set colors
+set palette model RGB defined (0 '#2ca02c', 1 '#ff7f0e', 2 '#9467bd', 3 '#d62728', 4 '#8c564b', 5 '#1f77b4', 6 '#e377c2', 7 '#7f7f7f', 8 '#bcbd22', 9 '#17becf')
+set boxwidth 0.8
+
+# Plot the histogram
+plot "statistics.dat" using 2:xticlabels(1) title 'Data Series' lc palette

@@ -4,9 +4,10 @@ It is particularly useful when an analytical expression for the derivative is di
 $$f'(x_0) \approx \frac{f(x_0 + h) - f(x_0)}{h}$$
 
 ![](https://www.iue.tuwien.ac.at/phd/heinzl/img543.png)
+
 *[source](https://www.iue.tuwien.ac.at/phd/heinzl/node27.html)*
 
-# 1st and 2nd order derivatives of `atan(x)` using finite difference:
+## 1st and 2nd order derivatives of `atan(x)` using finite difference:
 
 ![](/derivative/derivative.png)
 
@@ -18,15 +19,19 @@ When comparing to the graph, drawn by a calculator:
 
 It can be seen that the derivative, calculated using finite difference is very close to the one, give by definition[^1].
 
-# Errors:
+## Errors:
 By definition, the formula of derivative is:
+
 $$
-f'(x_0) = \lim_{{h \to 0}} \frac{{f(x_0 + h) - f(x_0)}}{h}.
+f'(x_0) = \lim_{{h \to 0}} \frac{{f(x_0 + h) - f(x_0)}}{h}
 $$
+
 When comparing it to the finite difference formula:
+
 $$
 f'(x_0) \approx \frac{f(x_0 + h) - f(x_0)}{h}
 $$
+
 It can be seen that the main source of error is `h` not being an infinitesimal, but rather  discrete value.
 The larger the step `h` is, the bigger the error will be.
 
