@@ -440,6 +440,9 @@ yp = yp + (h / 6.0) * (m1 + 2 * m2 + 2 * m3 + m4);
 x0 = x0 + h;
 ```
 
+We can also see that `RK4_2()` indeed utilizes Runge-Kutta method, according to the code above.
+The only difference being that the step can vary, thus `(h / 6.0)` is used instead of `1.0 / 6.0`.
+
 ***
 
 ## `LaneEmdem()`:
