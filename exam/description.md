@@ -236,6 +236,8 @@ void RK4_Sys(void (*f)(double, double[], double[]), double xi0,
 
 ```
 
+# [Source](https://github.com/Abhalphiest/NumericalAnalysis/blob/master/applications/laneEmden.c)
+
 ***
 
 # Short breakdown:
@@ -249,16 +251,16 @@ which can be used to find approximate solutions for [Simultaneous nonlinear equa
 ***
 
 ## Algorithm:
-1. Given an initial value problem \( y' = f(t, y) \), where \( y(t_0) = y_0 \).
-2. Choose a step size \( h \).
-3. Compute intermediate values \( k_1, k_2, k_3, \) and \( k_4 \) using the following formulas:
-   - \( k_1 = h \cdot f(t_n, y_n) \)
-   - \( k_2 = h \cdot f(t_n + \frac{h}{2}, y_n + \frac{k_1}{2}) \)
-   - \( k_3 = h \cdot f(t_n + \frac{h}{2}, y_n + \frac{k_2}{2}) \)
-   - \( k_4 = h \cdot f(t_n + h, y_n + k_3) \)
-4. Update the solution:
-   - \( y_{n+1} = y_n + \frac{1}{6}(k_1 + 2k_2 + 2k_3 + k_4) \)
-5. Repeat until the desired endpoint is reached.
+Given an initial value problem $y' = f(t, y)$, where $y(t_0) = y_0$:
+1. Choose a step size $h$.
+2. Compute intermediate values $k_1, k_2, k_3$, and $k_4$ using the following formulas:
+   - $k_1 = h \cdot f(t_n, y_n)$
+   - $k_2 = h \cdot f(t_n + \frac{h}{2}, y_n + \frac{k_1}{2})$
+   - $k_3 = h \cdot f(t_n + \frac{h}{2}, y_n + \frac{k_2}{2})$
+   - $k_4 = h \cdot f(t_n + h, y_n + k_3)$
+3. Update the solution:
+   - $y_{n+1} = y_n + \frac{1}{6}(k_1 + 2k_2 + 2k_3 + k_4)$
+4. Repeat until the desired endpoint is reached.
 
 ***
 
