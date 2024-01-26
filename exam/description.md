@@ -243,8 +243,23 @@ This code is used to solve the **Lane-Emdem** equation, which is
 used in astrophysics. It is 2nd order ODE (ordinary differential equation).
 Differential equations are not easy to be solved by analytical methods
 and this is where numerical methods come into help. The method used here is 
-[**Runde-Kutta solver**](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods),
+[**Runge-Kutta solver**](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods),
 which can be used to find approximate solutions for [Simultaneous nonlinear equations](https://en.wikipedia.org/wiki/Simultaneous_nonlinear_equations).
+
+***
+
+## Algorithm:
+1. Given an initial value problem \( y' = f(t, y) \), where \( y(t_0) = y_0 \).
+2. Choose a step size \( h \).
+3. Compute intermediate values \( k_1, k_2, k_3, \) and \( k_4 \) using the following formulas:
+   - \( k_1 = h \cdot f(t_n, y_n) \)
+   - \( k_2 = h \cdot f(t_n + \frac{h}{2}, y_n + \frac{k_1}{2}) \)
+   - \( k_3 = h \cdot f(t_n + \frac{h}{2}, y_n + \frac{k_2}{2}) \)
+   - \( k_4 = h \cdot f(t_n + h, y_n + k_3) \)
+4. Update the solution:
+   - \( y_{n+1} = y_n + \frac{1}{6}(k_1 + 2k_2 + 2k_3 + k_4) \)
+5. Repeat until the desired endpoint is reached.
+
 ***
 
 # Code walkthrough:
